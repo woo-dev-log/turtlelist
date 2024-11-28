@@ -7,11 +7,22 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# dependencies
 dist-ssr
 dist
 *.local
+
+/node_modules
+/.pnp
+.pnp.*
 .yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+# zero
+!.yarn/sdks
+!.yarn/cache
 
 # Editor directories and files
 .vscode/*
