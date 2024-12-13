@@ -1,0 +1,81 @@
+.container {
+    background-color: floralwhite;
+    padding: 20px;
+    width: 800px;
+}
+
+.calendar-container {
+    background-color: white;
+}
+
+.fc-day-sun a {
+    color: red;
+}
+
+.fc-day-sat a {
+    color: blue;
+}
+
+.fc .fc-toolbar-title {
+    font-weight: normal;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+    margin: 0;
+    padding: 0 40px;
+    background-color: floralwhite;
+    height: 60px;
+    font-size: 12px;
+}
+
+.fc .fc-toolbar-chunk .fc-button {
+    background-color: floralwhite;
+    border: none;
+    padding: 0;
+
+    span {
+        color: coral;
+    }
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+    background-color: red;
+}
+
+.fc .fc-button-primary:not(:enabled) {
+    background-color: blue;
+}
+
+.fc .fc-dayGridMonth-button, .fc .fc-dayGridMonth-button {
+    background-color: red;
+}
+
+.fc-scroller {
+    margin-bottom: 20px;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+    border: none;
+    padding: 10px 20px;
+}
+
+.fc-theme-standard td, .fc-theme-standard th {
+    border: none;
+}
+
+.fc-theme-standard th {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.fc-scrollgrid-section-body {
+    font-size: 14px
+}
+
+.fc-daygrid-event-harness {
+    padding: 0 10px;
+}
+
+.fc-event {
+    margin-bottom: 5px;
+}

@@ -1,10 +1,11 @@
-import Sidebar from "./components/sidebar/Sidebar";
+import CalendarPage from "./components/calendar/Calendar";
 import styles from "./styles/page.module.scss";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <CalendarPage />
       </main>
       <footer className={styles.footer}>
       </footer>
