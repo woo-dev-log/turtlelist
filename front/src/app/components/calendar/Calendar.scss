@@ -1,18 +1,26 @@
 .container {
+    display: flex;
+    gap: 20px;
     background-color: floralwhite;
     padding: 20px;
-    width: 800px;
 }
 
 .calendar-container {
     background-color: white;
+    max-width: 600px;
 }
 
-.fc-day-sun a {
+.taskForm-container {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+}
+
+.fc-day-sun .fc-daygrid-day-number {
     color: red;
 }
 
-.fc-day-sat a {
+.fc-day-sat .fc-daygrid-day-number {
     color: blue;
 }
 
@@ -22,7 +30,7 @@
 
 .fc .fc-toolbar.fc-header-toolbar {
     margin: 0;
-    padding: 0 40px;
+    padding: 0 20px;
     background-color: floralwhite;
     height: 60px;
     font-size: 12px;
@@ -32,6 +40,7 @@
     background-color: floralwhite;
     border: none;
     padding: 0;
+    font-size: 16px;
 
     span {
         color: coral;
@@ -46,7 +55,8 @@
     background-color: blue;
 }
 
-.fc .fc-dayGridMonth-button, .fc .fc-dayGridMonth-button {
+.fc .fc-dayGridMonth-button,
+.fc .fc-dayGridMonth-button {
     background-color: red;
 }
 
@@ -59,7 +69,8 @@
     padding: 10px 20px;
 }
 
-.fc-theme-standard td, .fc-theme-standard th {
+.fc-theme-standard td,
+.fc-theme-standard th {
     border: none;
 }
 
@@ -78,4 +89,8 @@
 
 .fc-event {
     margin-bottom: 5px;
+}
+
+.fc-daygrid-day:hover {
+    background-color: var(--fc-today-bg-color);
 }
