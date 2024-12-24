@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { getTodayDate } from '../dateutils';
-
-interface Task {
-    title: string;
-    start: string;
-    end?: string;
-    time?: string;
-    color?: string;
-}
+import { getTodayDate } from '@/utils/dateutils';
+import { Task } from '@/types/TaskTypes';
 
 interface TaskFormProps {
     onAddTask: (task: Task) => void;

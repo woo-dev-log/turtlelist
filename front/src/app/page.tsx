@@ -1,5 +1,5 @@
-import CalendarPage from "./components/calendar/Calendar";
-import styles from "./styles/page.module.scss";
+import CalendarPage from "./calendar/Calendar";
+import styles from "@/styles/page.module.scss";
 
 export default function Home() {
   return (
