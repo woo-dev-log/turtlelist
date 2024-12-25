@@ -14,7 +14,7 @@
 .taskForm-container {
     background-color: white;
     padding: 20px;
-    width: 800px;
+    width: 100%;
 }
 
 .fc-day-sun .fc-daygrid-day-number {
@@ -94,4 +94,15 @@
 
 .fc-daygrid-day:hover {
     background-color: var(--fc-today-bg-color);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .calendar-container {
+        max-width: 100%;
+    }
 }

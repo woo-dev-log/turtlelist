@@ -7,7 +7,7 @@ import interactionPlugin from '@fullcalendar/interaction';
 import './Calendar.scss';
 import { formatDate } from '@/utils/dateutils';
 import useListStore from '@/store/listStore';
-import TaskForm from '@/app/components/TaskForm';
+import TaskForm from '@/app/components/taskform/TaskForm';
 import { Task } from '@/types/TaskTypes';
 import TaskList from '../task/TaskList';
 
@@ -55,7 +55,7 @@ const CalendarPage = () => {
         />
       </div>
       <div className="taskForm-container">
-        {/* <TaskForm onAddTask={addTaskToCalendar} defaultStartDate={selectedDate} /> */}
+        <TaskForm onAddTask={addTaskToCalendar} defaultStartDate={selectedDate} />
         <TaskList />
       </div>
     </div>

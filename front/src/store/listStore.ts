@@ -1,13 +1,5 @@
+import { Task } from '@/types/TaskTypes';
 import { create } from 'zustand';
-
-interface Task {
-    id: string;
-    title: string;
-    start: string;
-    end?: string;
-    time?: string;
-    color?: string;
-}
 
 interface ListState {
     todos: Task[];
