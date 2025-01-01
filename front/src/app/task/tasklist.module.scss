@@ -1,3 +1,12 @@
+.dateGroup {
+    overflow-x: auto;
+}
+
+.dateHeader {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .listContainer {
     margin-bottom: 10px;
     border-bottom: 0.1px solid lightgray;
@@ -9,6 +18,34 @@
 
 .listDate {
     display: flex;
+    align-items: center;
     gap: 10px;
     margin-bottom: 5px;
+}
+
+.deleteButton {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 767px) {
+    .dateHeader {
+        font-size: 16px;
+    }
+
+    .listContainer {
+        font-size: 14px;
+    }
+
+    .listDate {
+        display: block;
+    }
 }
