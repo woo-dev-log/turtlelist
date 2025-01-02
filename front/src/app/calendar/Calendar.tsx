@@ -26,7 +26,7 @@ const CalendarPage = () => {
         task.end && task.end !== task.start
           ? `${task.end}${task.time ? `T${task.time}` : 'T23:59:59'}`
           : `${task.start}${task.time ? `T${task.time}` : 'T23:59:59'}`,
-      color: '#84b6fb',
+      color: task.time ? '#3788d8' : '#fb8494'
     };
 
     addList(newList.title, newList.start, newList.end, newList.color);

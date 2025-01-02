@@ -12,7 +12,7 @@ const groupTodosByDate = (todos: Task[]): Record<string, Task[]> => {
         if (!groups[dateKey]) {
             groups[dateKey] = [];
         }
-        
+
         groups[dateKey].push(todo);
         return groups;
     }, {} as Record<string, Task[]>);
@@ -32,11 +32,12 @@ export default function TaskList() {
                         <div key={event.id} className={styles.listContainer}>
                             <div className={styles.listTitle}>{event.title}</div>
                             <div className={styles.listDate}>
-                                <p>시작일: {formatTime(new Date(event.start))}</p>
-                                {event.end && <p>종료일: {formatTime(new Date(event.end))}</p>}
-                                {/* <p>시작일: {event.start.includes('T') ? formatTime(new Date(event.start)) : event.start}</p>
-                                {event.end && <p>종료일: {event.end.includes('T') ? formatTime(new Date(event.end)) : event.end}</p>} */}
-                                {event.time && <p>시간: {formatTime(new Date(event.time))}</p>}
+                                {event.end
+                                    ? <>
+                                        <p>시작일: {formatTime(new Date(event.start))}</p>
+                                        <p>종료일: {formatTime(new Date(event.end))}</p>
+                                    </>
+                                    : <p>시간: {formatTime(new Date(event.start))}</p>}
                                 <button onClick={() => deleteList(event.id ? event.id : "0")} className={styles.deleteButton}>
                                     삭제
                                 </button>

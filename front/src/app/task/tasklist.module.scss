@@ -5,6 +5,10 @@
 .dateHeader {
     font-weight: bold;
     font-size: 18px;
+    border-radius: 5px;
+    padding: 2px 4px;
+    margin-bottom: 5px;
+    background-color: bisque;
 }
 
 .listContainer {
@@ -14,6 +18,7 @@
 
 .listTitle {
     font-weight: bold;
+    color: #007bff;
 }
 
 .listDate {
@@ -30,6 +35,8 @@
     color: white;
     border: none;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .deleteButton:hover {
@@ -47,5 +54,9 @@
 
     .listDate {
         display: block;
+    }
+
+    .deleteButton {
+        font-size: 12px;
     }
 }
